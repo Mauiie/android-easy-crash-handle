@@ -54,7 +54,7 @@ public class AECrashHandler implements Thread.UncaughtExceptionHandler {
                 @Override
                 public void run() {
                     Looper.prepare();
-                    Toast.makeText(mContext, "很抱歉,程序出现异常,即将退出.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext,mContext.getResources().getString(R.string.error_toast), Toast.LENGTH_SHORT).show();
                     Looper.loop();
                 }
             }.start();

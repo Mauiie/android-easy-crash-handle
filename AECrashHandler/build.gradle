@@ -23,3 +23,30 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'ae-crash-handler'
+
+    publishedGroupId = 'com.mauiie.aech'
+    libraryName = 'AECrashHandler'
+    artifact = 'AECrashHandler'
+
+    libraryDescription = 'Android easy crash handle lib.'
+
+    siteUrl = 'https://github.com/Mauiie/android-easy-crash-handle'
+    gitUrl = 'https://github.com/Mauiie/android-easy-crash-handle.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'mauiie'
+    developerName = 'Tai Jinglei'
+    developerEmail = 'taijinglei@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

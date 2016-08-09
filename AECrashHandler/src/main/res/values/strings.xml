@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidEasyCrashHandler</string>
+    <string name="error_toast">很抱歉，程序出现异常，即将退出。</string>
 </resources>

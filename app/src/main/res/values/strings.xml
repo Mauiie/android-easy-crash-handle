@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyOpenProject</string>
+    <string name="test">测试异常捕获</string>
 </resources>

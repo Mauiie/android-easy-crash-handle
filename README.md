@@ -11,7 +11,11 @@ Android 应用崩溃异常抓取处理工具。实现了在应用崩溃的时候
 * 集成简单，配置简单。
 * 可以按照当前项目的风格来自定义存储路径和定制化上传到自己服务器。
 * 便于Android 开发的小伙伴来定位自己的错误，机型适配等。
-
+### PC 快速查看异常的方式：创建如下批处理文件 直接可吧异常文件抓取到PC中查看
+    @echo off
+    adb pull /storage/emulated/0/Android/data/com.xxx.mauiie/files/crash  ./crash/
+    @exit
+    
 # AECrashHandler使用方法
 
 ## 下载AECrashHandler

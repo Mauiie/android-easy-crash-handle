@@ -72,6 +72,7 @@ public class AECrashHandler implements Thread.UncaughtExceptionHandler {
             String localFolderPath = config.getLocalFolderPath();
             if (null != localFolderPath && localFolderPath.length() > 2) {
                 File file = new File(localFolderPath);
+                file.mkdirs();
                 if (file.exists() && file.isDirectory()) {
                     AECHFileWriter.getInstance(mContext).writeEx2File(ex, localFolderPath);
                 } else {
